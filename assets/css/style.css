@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: white 1px dotted;
+}
+
+.body, html {
+    background-color: black;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.col-1, .col-3 {
+    float: left;
+    padding: 15px;
+    width: 20%;
+}
+
+.col-2 {
+    float: left;
+    width: 60%;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+
+    width: 100%;
+    background-color: rgb(9, 49, 112);
+
+    font-size: 9pt;
+    color: white;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 10px;
+
+    width: 100%;
+    background-color: rgb(9, 61, 143);
+
+    font-size: 10pt;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.row-3 {
+    background-image: url(../img/rs=w_814\,h_407\,cg_true.webp);
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+    p {
+        background-color: white;
+    }
+}
+
+.row-4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    padding: 50px;
+    gap: 10px;
+    background-color: white;
+
+    .up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .down {
+        display: flex;
+        justify-content: space-around;
+
+        .left {
+            font-size: 9pt;
+            button {
+                background-color: rgb(18, 87, 197);
+                padding: 10px;
+                
+            }
+    
+            button:hover {
+                background-color: rgb(9, 61, 143);
+            }
+        }
+    
+        .right {
+            display: flex;
+            float: left;
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+    
+                li {
+                    background-color: rgb(9, 61, 143);
+                }
+    
+                li:hover {
+                    background-color: rgb(9, 49, 112);
+                }
+        }
+    }
+
+}
+
+.row-5 {
+    background-color: rgb(9, 61, 143);
+    padding: 50px;
+    gap: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .down {
+        
+    }
+    
+}
